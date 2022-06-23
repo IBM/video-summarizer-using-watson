@@ -1,0 +1,6 @@
+---
+applications:
+ - name: video-summarizer-using-watson
+   random-route: true
+   memory: 4096M
+   disk_quota: 4096M

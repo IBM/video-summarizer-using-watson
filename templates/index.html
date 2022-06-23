@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Summarize Video and Audio files using IBM Watson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@10.56.0/css/carbon-components.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>IBM Code Pattern</title>
+
+</head>
+
+<body>
+    <header class="bx--header" role="banner" aria-label="IBM" data-header>
+        <a class="bx--header__name" href="javascript:void(0)" title="">
+            <span class="bx--header__name--prefix">
+                IBM
+                &nbsp;
+            </span>
+            Developer
+        </a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="bx--grid">
+        <div class="bx--row">
+            <div class="bx--col-md-12">
+                <h2>Summarize Video and Audio files using IBM Watson</h2>        
+            </div>
+        </div>
+        
+        <div class="bx--row">
+            <div class="bx--col-md-2">
+                <div class="outside">
+                    <div class="inside">
+                        <br>
+                        <br>
+                        <h4>Upload video/audio file</h4>
+                        <div class="bx--form-item">
+                            <p class="bx--label-description">Max. 500 MB file size, and Max. 40min video length.</p>
+
+                            <!-- <form action="/uploader" method="post" enctype="multipart/form-data">
+                                <input type="file" name="video">
+                                <input type="submit" value="Upload">
+                              </form> -->
+                              <form action="/uploader" method="post" enctype="multipart/form-data">
+                                <div class="bx--file" data-file data-file-demo-state-manager>
+                                    <label for="file-uploader" class="bx--file-browse-btn" role="button" tabindex="0">
+                                        <div data-file-drop-container class="bx--file__drop-container"> click here to upload
+                                            <input type="file" class="bx--file-input" id="file-uploader" name="video"
+                                                accept="video/*,audio/*" data-file-uploader data-target="[data-file-container]"/>
+                                        </div>
+                                    </label>
+                                    <div data-file-container id="myFiles" name="myFiles" class="bx--file-container">
+                            
+                                    </div>
+                                    <br>
+                                    <h4>Select Language Model
+                                    </h4>
+                            
+                                    <br>
+                                    <div class="bx--form-item" id="gotLangModel">
+                                        <div class="bx--select">
+                                            <div class="bx--select-input__wrapper">
+                                                <select id="select-id1" class="bx--select-input">
+                            
+                                                </select>
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                                    <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="getLangModel">
+                                        <div class="bx--file__selected-file">
+                                            <p class="bx--file-filename">Getting Language STT Model ...</p>
+                                            <span data-for="prepopulated-file-uploader" class="bx--file__state-container">
+                                                <div class="bx--inline-loading__animation">
+                                                    <div data-inline-loading-spinner=""
+                                                        class="bx--loading bx--loading--small">
+                                                        <svg class="bx--loading__svg" viewBox="-75 -75 150 150">
+                                                            <circle class="bx--loading__background" cx="0" cy="0"
+                                                                r="26.8125">
+                                                            </circle>
+                                                            <circle class="bx--loading__stroke" cx="0" cy="0"
+                                                                r="26.8125">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h4>Select Accoustic Model</h4>                                    
+                                    <br>
+                                    <div class="bx--form-item" id="gotAcoModel">
+                                        <div class="bx--select">
+                                            <div class="bx--select-input__wrapper">
+                                                <select id="select-id2" class="bx--select-input">
+                            
+                            
+                                                </select>
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                                    <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="getAcoModel">
+                                        <div class="bx--file__selected-file">
+                                            <p class="bx--file-filename">Getting Acoustic STT Model ...</p>
+                                            <span data-for="prepopulated-file-uploader" class="bx--file__state-container">
+                                                <div class="bx--inline-loading__animation">
+                                                    <div data-inline-loading-spinner=""
+                                                        class="bx--loading bx--loading--small">
+                                                        <svg class="bx--loading__svg" viewBox="-75 -75 150 150">
+                                                            <circle class="bx--loading__background" cx="0" cy="0"
+                                                                r="26.8125">
+                                                            </circle>
+                                                            <circle class="bx--loading__stroke" cx="0" cy="0"
+                                                                r="26.8125">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <br>                                
+                                    <div class="bx--form-item bx--checkbox-wrapper" style="display: none">
+                                        <input id="chunk" class="bx--checkbox" type="checkbox" value="chunk"
+                                          name="chunk" checked>
+                                    </div>
+                                    <br>
+                                    <div class="bx--btn-set">
+                                        <div>
+                                            <button class="bx--btn bx--btn--primary" id="Upload" name="Upload" value="Upload" type="button">Submit
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                                    style="will-change: transform;" xmlns="http://www.w3.org/2000/svg"
+                                                    class="bx--btn__icon" width="16" height="16" viewBox="0 0 32 32"
+                                                    aria-hidden="true">
+                                                    <path d="M5 6.6l1.2 1.1L11 3v13h2V3l4.8 4.7L19 6.6 12 0z">
+                                                    </path>
+                                                    <path d="M22 14v6H2v-6H0v10H24V14z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div id="uploaded2">
+                                            <div class="bx--file__selected-file">
+                                                <p class="bx--file-filename">Video Uploaded</p>
+                                                <span data-for="prepopulated-file-uploader" class="bx--file__state-container">
+                                                    <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                                        style="will-change: transform;"
+                                                        xmlns="http://www.w3.org/2000/svg" class="bx--file-complete"
+                                                        width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                                        <path
+                                                            d="M8,1C4.1,1,1,4.1,1,8c0,3.9,3.1,7,7,7s7-3.1,7-7C15,4.1,11.9,1,8,1z M7,11L4.3,8.3l0.9-0.8L7,9.3l4-3.9l0.9,0.8L7,11z">
+                                                        </path>
+                                                        <path d="M7,11L4.3,8.3l0.9-0.8L7,9.3l4-3.9l0.9,0.8L7,11z"
+                                                            data-icon-path="inner-path" opacity="0"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div id="uploading2">
+                                            <div class="bx--file__selected-file">
+                                                <p class="bx--file-filename">Uploading ...</p>
+                                                <span data-for="prepopulated-file-uploader" class="bx--file__state-container">
+                                                    <div class="bx--inline-loading__animation">
+                                                        <div data-inline-loading-spinner=""
+                                                            class="bx--loading bx--loading--small">
+                                                            <svg class="bx--loading__svg" viewBox="-75 -75 150 150">
+                                                                <circle class="bx--loading__background" cx="0" cy="0"
+                                                                    r="26.8125">
+                                                                </circle>
+                                                                <circle class="bx--loading__stroke" cx="0" cy="0"
+                                                                    r="26.8125">
+                                                                </circle>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            
+                                    <br>
+                            
+                                    <div id="error2">
+                                        <div class="bx--file__selected-file bx--file__selected-file--invalid" data-invalid>
+                                            <p class="bx--file-filename">Error processing file</p>
+                                            <span data-for="prepopulated-file-uploader" class="bx--file__state-container">
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                                    style="will-change: transform;" xmlns="http://www.w3.org/2000/svg"
+                                                    class="bx--file--invalid" width="16" height="16" viewBox="0 0 16 16"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M8,1C4.2,1,1,4.2,1,8s3.2,7,7,7s7-3.1,7-7S11.9,1,8,1z M7.5,4h1v5h-1C7.5,9,7.5,4,7.5,4z M8,12.2 c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8c0.4,0,0.8,0.4,0.8,0.8S8.4,12.2,8,12.2z">
+                                                    </path>
+                                                    <path
+                                                        d="M7.5,4h1v5h-1C7.5,9,7.5,4,7.5,4z M8,12.2c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8 c0.4,0,0.8,0.4,0.8,0.8S8.4,12.2,8,12.2z"
+                                                        data-icon-path="inner-path" opacity="0"></path>
+                                                </svg>
+                                            </span>
+                                            <div class="bx--form-requirement">
+                                                <div class="bx--form-requirement__title">Either no File is selected or File size exceeds limit.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <video id="videoHere" width="100%" controls>
+
+                                    </video>
+                            
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bx--col-md-6">
+                <div class="outside">
+                    <div class="inside">
+                        
+                        <br>
+                        <br>
+                        
+                        <p id="myP" style="color: green;"> </p>
+
+                        <div data-tabs class="bx--tabs" id="tabsHere">
+                            <div class="bx--tabs-trigger" tabindex="0">
+                                <a href="javascript:void(0)" class="bx--tabs-trigger-text" tabindex="-1"></a>
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                </svg>
+                            </div>
+                            <ul class="bx--tabs__nav bx--tabs__nav--hidden" role="tablist" id="tabs">
+                                <li class="bx--tabs__nav-item bx--tabs__nav-item--selected" data-target=".tab-1-default" role="tab" aria-selected="true">
+                                    <a tabindex="0" id="tab-link-1-default" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-1-default">Speaker Diarization</a>
+                                </li>
+                                <li class="bx--tabs__nav-item " data-target=".tab-2-default" role="tab">
+                                    <a tabindex="0" id="tab-link-2-default" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-2-default">Summary</a>
+                                </li>
+                                <li class="bx--tabs__nav-item " data-target=".tab-3-default" role="tab">
+                                    <a tabindex="0" id="tab-link-3-default" class="bx--tabs__nav-link" href="javascript:void(0)" role="tab" aria-controls="tab-panel-3-default">Transcript</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bx--tab-content">
+                            <div id="tab-panel-1-default" class="tab-1-default" role="tabpanel" aria-labelledby="tab-link-1-default" aria-hidden="false">
+                                <div id="scrollClass">
+                                    <p id="speakerHere"></p>
+                                    <div class="bx--row" id="Loading1">
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            
+                            <div id="tab-panel-2-default" class="tab-2-default" role="tabpanel" aria-labelledby="tab-link-2-default" aria-hidden="true" hidden>
+                                <div id="scrollClass">
+                                    <div id="Loaded" style="display: none">
+                                        
+                                        <h4>GPT-2 Summarizer (DL-Transformer based approach)</h4>
+                                        <strong>Summary</strong>
+                                        <p id="summaryHere2"></p>
+                                        <br>
+
+                                        <br>
+                                        <hr>
+                                        <h4>XLNET Summarizer (DL-Transformer based approach)</h4>
+                                        <strong>Summary</strong>
+                                        <p id="summaryHere3"></p>
+                                        <br>
+
+                                        <br>
+                                        <hr>
+                                        <h4>Gensim Summarizer (ML based approach)</h4>
+                                        <strong>Summary</strong>
+                                        <p id="summaryHere"></p>
+                                        <br>
+                                        
+                                        <br>
+                                        <strong>Keywords</strong>
+                                        <p id="keywordHere"></p>
+                                        <br>
+                                        <hr>
+                                        <h4>Key BERT Summarizer Highlights</h4>
+                                        <p id="summaryHere4"></p>
+                                        <br>
+                                        
+                                        <br>
+                                        <hr>
+                                        <h4>Additional Insights & Key phrases</h4>
+                                        <p id="summaryHere5"></p>
+                                        <br>
+
+                                        <br>
+                                    </div>
+                                    <div class="bx--row" id="Loading2">
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="tab-panel-3-default" class="tab-3-default" role="tabpanel" aria-labelledby="tab-link-3-default" aria-hidden="true" hidden>
+                                <div id="scrollClass" class="scrollClass">
+                                    <p id="transcriptHere"></p>
+                                    <div class="bx--row" id="Loading3">
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="bx--col-lg-12">
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <div class="bx--form-item">
+                                                        <label class="bx--label bx--skeleton"></label>
+                                                        <div class="bx--select bx--skeleton">
+                                                            <select class="bx--select-input"></select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/carbon-components@10.56.0/scripts/carbon-components.min.js"></script>
+<script src="../static/js/script.js"></script>
+</html>

@@ -1,0 +1,10 @@
+pydub==0.25.1
+bert-extractive-summarizer==0.9.0
+transformers==4.11.3
+moviepy==1.0.3
+ibm-watson==5.3.0
+flask_restful==0.3.9
+flask==2.0.2
+gensim==3.8.0
+sentencepiece==0.1.96
+keybert==0.5.1

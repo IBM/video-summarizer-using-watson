@@ -1,0 +1,36 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: video-summarizer-using-watson-deploymennt
+  labels:
+    app: flask
+spec:
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: video-summarizer-using-watson
+        image: manojjahgirdar/video-summarizer-using-watson:v12
+        ports:
+        - containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: video-summarizer-using-watson-service
+spec:
+  selector:
+    app: flask
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+    nodePort: 32020
+  type: LoadBalancer
