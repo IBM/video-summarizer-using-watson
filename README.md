@@ -15,11 +15,12 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
 
-1. Step 1.
-2. Step 2.
-3. Step 3.
-4. Step 4.
-5. Step 5.
+1. User uploads a video or audio file.
+2. If it is a video, then audio is extracted from the video.
+3. The audio is sent to Watson Speech to Text that transcribes the audio to text.
+4. The text is then summarized with different summarizers.
+5. The speaker diarization, summary and transcript are displayed on the UI.
+6. User can then download the insights.
 
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
