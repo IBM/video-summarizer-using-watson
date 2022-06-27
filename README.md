@@ -324,7 +324,7 @@ This is a part of Q & A's asked at the end of the meeting.
 
     >NOTE: A **Standard account** is required to train a custom Speech To Text Model. There are three types of plans, Lite (FREE), Standard and Premium (PAID) for more info visit <https://cloud.ibm.com/catalog/services/speech-to-text>
 
-    >You can refer to the [IBM Watson Speech to Text custom model training.ipynb](notebooks/IBM%20Watson%20Speech%20to%20Text%20custom%20model%20training.ipynb) notebook to learn in detail how to build and train custom Watson Speech to Text models.
+    >You can refer to the [IBM Watson Speech to Text custom model training.ipynb](Notebooks/IBM%20Watson%20Speech%20to%20Text%20custom%20model%20training.ipynb) notebook to learn in detail how to build and train custom Watson Speech to Text models.
 
 * Click on submit.
 ![screenshot3](doc/source/images/screenshot3.png)
