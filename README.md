@@ -1,14 +1,15 @@
 # Summarize a video or audio file using Watson
 
-In this code pattern, we will build an end to end framework for generating summaries & insights from video and/or audio files. We will be using a combination of IBM & open sourced technologies to create this solution. Its always beneficial if we can get a gist of the content without going through the entire data and the problem adds more complexity if the data is in the form of a video or audio file. We demonstrate what does it take to build a robust solution hosted locally or on cloud for analyzing the video or audio files to quickly generate meaningful summary & insights using different approaches. Whats more is that you get the ability to view & choose the output from different state of the art models. 
+In this code pattern, you will learn to build an end to end framework for generating summaries & insights from video and/or audio files using a combination of IBM and Open source technologies.
+
+Its always beneficial if we can get a gist of the content without going through the entire data and the problem adds more complexity if the data is in the form of a video or audio file. In this code pattern you will learn about building a robust solution for analyzing the video or audio files to quickly generate meaningful summary & insights using different Deep learning and Machine learning approaches. You will also learn about improving the readibility of the transcripts with IBM Watson Speech to Text speech recognition models, how to optimize the parameteres, train different speech to text models and learn about different state of the art language models used for summarizing the text. 
 
 When you have completed this code pattern, you will understand how to:
 
-* Create a framework for hosting the summarizer solution
-* Ingest a video or audio file for further processing
-* Transcribe the text using new features of Watson Speech to Text 
-* Generate summary, highlights & insights using Transformer & ML based models
-* Visualize the results on the GUI for quick consumption and analysis
+* Use Watson Speech to Text service to convert the human voice into the written word.
+* Transcribe video/audio with greater readibility by tuning the Watson Speech to Text parameters.
+* Generate summary, highlights & insights using Transformer & ML based models.
+* Visualize the results on the GUI for quick consumption and analysis.
 
 <!--add an image in this path-->
 ![architecture](doc/source/images/architecture.png)
@@ -522,7 +523,9 @@ def Transcribe(audiofilepath):
 
 # Summary
 
-In this code pattern we learnt how to create an integrated system to convert speech to text, generate summary and insights from a video or audio file. This solution has wider applicability across domains to gather insights quickly from different data formats. This solution will be beneficial for Developers, Data Scientists & Architects to understand the Transformer based architecture & Watson Speech to Text capabilities to embed them in different apps to solve complex business problems associated with unstructured data.
+In this code pattern you learned how to create an integrated system to convert speech to text, generate summary and insights from a video or audio file. You also learned about improving the readibility of the transcripts by tuning the parameters of Watson Speech to Text and finally you learned about different state of the art language models used for summarizing the text. 
+
+This solution has wider applicability across domains to gather insights quickly from different data formats. This solution will be beneficial for Developers, Data Scientists & Architects to understand the Transformer based architecture & Watson Speech to Text capabilities to embed them in different apps to solve complex business problems associated with unstructured data.
 
 <!-- keep this -->
 ## License
