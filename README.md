@@ -1,13 +1,14 @@
 # Summarize a video or audio file using Watson
 
-In this code pattern, we will [create something] using [technologies] and [components]. [Explain briefly how things work]. [Give acknowledgements to others if necessary]
+In this code pattern, we will build an end to end framework for generating summaries & insights from video and/or audio files. We will be using a combination of IBM & open sourced technologies to create this solution. Its always beneficial if we can get a gist of the content without going through the entire data and the problem adds more complexity if the data is in the form of a video or audio file. We demonstrate what does it take to build a robust solution hosted locally or on cloud for analyzing the video or audio files to quickly generate meaningful summary & insights using different approaches. Whats more is that you get the ability to view & choose the output from different state of the art models. 
 
 When you have completed this code pattern, you will understand how to:
 
-* [goal 1]
-* [goal 2]
-* [goal 3]
-* [goal 4]
+* Create a framework for hosting the summarizer solution
+* Ingest a video or audio file for further processing
+* Transcribe the text using new features of Watson Speech to Text 
+* Generate summary, highlights & insights using Transformer & ML based models
+* Visualize the results on the GUI for quick consumption and analysis
 
 <!--add an image in this path-->
 ![architecture](doc/source/images/architecture.png)
@@ -34,7 +35,7 @@ When you have completed this code pattern, you will understand how to:
     - 2.1. [Create Watson Speech to Text service on IBM Cloud](#21-create-watson-speech-to-text-service-on-ibm-cloud)
     - 2.2. [Add Watson Speech to Text credentials to the application](#22-add-watson-speech-to-text-credentials-to-the-application)
 1. [Run the Application](#3-run-the-application)
-1. [Analyze the Application](#4-analyze-the-application)
+1. [Generate summary and insights from the data](#4-generate-summary-and-insights-from-the-data)
 1. [Watson Speech to Text Optimization](#5-watson-speech-to-text-optimization)
 
 ## 1. Clone the repo
@@ -300,7 +301,7 @@ You can choose to run the application Locally or deploy on Red Hat OpenShift or 
 
 </details>
 
-## 4. Analyze the Application
+## 4. Generate summary and insights from the data
 
 * Upload any video/audio file. (.mp4/.mov or .mp3/.wav). You can use the dataset provided in the repo [data/earnings-call-2019.mp4](data/earnings-call-2019.mp4) or [data/earnings-call-Q-and-A.mp4](data/earnings-call-Q-and-A.mp4)
 ![screenshot1](doc/source/images/screenshot1.png)
@@ -338,7 +339,7 @@ This is a part of Q & A's asked at the end of the meeting.
 
 >Speaker Diarization is a process of extracting multiple speakers information from an audio. [Learn more](https://en.wikipedia.org/wiki/Speaker_diarisation)
 
-* You can view the Summary from Gensim, GPT2, XLNet and Key Bert.
+* You can view the Summary from Gensim, GPT2 & XLNet models which are ML & Transformer based respectively. The insights are generated using KeyBert model. Navigate to this [URL](https://github.com/IBM/video-summarizer-using-watson/blob/main/Notebooks/Summarize.ipynb) and play around with the different settings of model hyperparameters to increase or decrease the size of the output to suit your requirements. 
 ![screenshot5-1](doc/source/images/screenshot5-1.png)
 ![screenshot5-2](doc/source/images/screenshot5-2.png)
 
@@ -520,6 +521,8 @@ def Transcribe(audiofilepath):
 >Learn more about Profanity filtering [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting#profanity-filtering).
 
 # Summary
+
+In this code pattern we learnt how to create a system to generate summary and insights from a video or audio file. This solution has wider applicability across domains to gather insights quickly from different data formats. This will be beneficial for end users to understand the Transformer based architecture & Watson Speech to Text capabilities to embed them in different apps to solve complex business problems using unstructured data.
 
 <!-- keep this -->
 ## License
