@@ -53,8 +53,8 @@ When you have completed this code pattern, you will understand how to:
 
 1. Clone the repo
 2. Create Watson Services
-    - 2.1. Create Watson Speech to Text service on IBM Cloud
-    - 2.2. Add Watson Speech to Text credentials to the application
+  - 2.1. Create Watson Speech to Text service on IBM Cloud
+  - 2.2. Add Watson Speech to Text credentials to the application
 3. Run the Application
 4. Generate summary and insights from the data
 5. Watson Speech to Text Optimization
