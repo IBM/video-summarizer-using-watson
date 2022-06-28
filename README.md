@@ -38,6 +38,7 @@ When you have completed this code pattern, you will understand how to:
 1. [Run the Application](#3-run-the-application)
 1. [Generate summary and insights from the data](#4-generate-summary-and-insights-from-the-data)
 1. [Watson Speech to Text Optimization](#5-watson-speech-to-text-optimization)
+1. [Summarizer Optimization](#6-summarizer-optimization)
 
 ## 1. Clone the repo
 
@@ -520,6 +521,9 @@ def Transcribe(audiofilepath):
 ```
 
 >Learn more about Profanity filtering [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting#profanity-filtering).
+
+## 6. Summarizer Optimization
+We have used transformer based and ML based models to generate summary from the transcript.
 
 # Summary
 
