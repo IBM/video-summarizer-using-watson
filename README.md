@@ -354,7 +354,9 @@ The Watson Speech to Text model can be optimized further to get more precise and
 - Profanity filtering (Beta)
 
 ### Speaker Labels (Beta)
-Speaker labels parameter in Watson™ Speech to Text, identifies which person spoke which words in a conversation. It is best optimized for two person conversation scenario, however it can support upto 6 person but the performance may vary. Example: Telephone conversation between two people, Q&A between two people, etc.
+Speaker labels parameter in Watson™ Speech to Text, identifies which person spoke which words in a conversation. It is best optimized for two person conversation scenario, however it can support upto 6 person but the performance may vary. 
+
+Example: Telephone conversation between two people, Q&A between two people, etc.
 
 To enable Speaker labels, add the `speaker_labels` parameter and set it to `true`.
 
@@ -413,9 +415,44 @@ def Transcribe(audiofilepath):
     return speech_recognition_results
 ```
 
+>Note: Speaker Labels is already enabled in this code pattern. ✔️
+
 >Learn more about Smart formatting [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting).
 
 ### End of phrase silence time
+End of phrase silence time parameter in Watson™ Speech to Text, specifies the duration of the pause interval at which the transcript has to be split. This parameter improves the sentence formation in the transcript.
+
+Example:
+
+If a person speaks numbers such as one two three four with a pause between three and four, the transcript would be something like this if the End of phrase silence time not set:
+
+"One two three"
+
+"four"
+
+However if the End of phrase silence time is set to say 1sec or 1.5sec then the transcript would be something like this:
+
+"One two three four"
+
+To enable End of phrase silence time, add the `end_of_phrase_silence_time` parameter and set it to desired time for example `1.5`sec.
+
+```python
+def Transcribe(audiofilepath):
+    with open(audiofilepath, 'rb') as audio_file:
+        speech_recognition_results = speech_to_text.recognize(
+                audio=audio_file,
+                content_type='audio/wav',
+                model='en-US_NarrowbandModel',
+                speaker_labels=True,
+                smart_formatting=True,
+                end_of_phrase_silence_time=1.5
+            ).get_result()
+
+    return speech_recognition_results
+
+>Note: End of phrase silence time is already enabled in this code pattern. ✔️
+
+>Learn more about End of phrase silence time [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-parsing#silence-time).
 
 ### Numeric redaction (Beta)
 
