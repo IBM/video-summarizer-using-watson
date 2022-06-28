@@ -371,9 +371,49 @@ def Transcribe(audiofilepath):
     return speech_recognition_results
 ```
 
->Note: We are using an **US English NarrowBand Model** to transcribe the audio. ***NarrowBand Model*** is optimized for human to human conversations, whereas, ***BroadBand*** Model is optimized for human to bot or vice-versa conversations. Change your model accordingly.
+>Note: We are using an **US English NarrowBand Model** to transcribe the audio. ***NarrowBand Model*** is optimized for human to human conversations, whereas, ***BroadBand Model*** is optimized for human to bot or vice-versa conversations. Change your model accordingly.
+
+>Note: Speaker Labels is already enabled in this code pattern. ✔️
+
+>Learn more about Speaker Labels [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speaker-labels).
 
 ### Smart formatting
+Smart formatting parameter in Watson™ Speech to Text, converts the following strings into more conventional representations:
+- Dates
+- Times
+- Series of digits and numbers
+- Phone numbers
+- Currency values (for US English and Spanish)
+- Internet email and web addresses (for US English and Spanish)
+
+Example:
+
+String Type|Smart formatting OFF ❌|Smart formatting ON ✔️
+--|--|--
+Dates|I was born on the ninth of December nineteen hundred|I was born on 12/9/1900
+Times|The meeting starts at nine thirty AM|The meeting starts at 9:30 AM
+Numbers|The quantity is one million one hundred and one dollar|The quantity is $1000101
+Phone numbers|Call me at nine one four two three seven one thousand|Call me at 914-237-1000
+Internet email and web addresses|My email address is john dot doe at foo dot com|My email address is john.doe@foo.com
+Combinations|The code is zero two four eight one and the date of service is May fifth two thousand and one|The code is 02481 and the date of service is 5/5/2001
+
+To enable Smart formatting, add the `smart_formatting` parameter and set it to `true`.
+
+```python
+def Transcribe(audiofilepath):
+    with open(audiofilepath, 'rb') as audio_file:
+        speech_recognition_results = speech_to_text.recognize(
+                audio=audio_file,
+                content_type='audio/wav',
+                model='en-US_NarrowbandModel',
+                speaker_labels=True,
+                smart_formatting=True
+            ).get_result()
+
+    return speech_recognition_results
+```
+
+>Learn more about Smart formatting [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting).
 
 ### End of phrase silence time
 
