@@ -35,6 +35,7 @@ When you have completed this code pattern, you will understand how to:
     - 2.2. [Add Watson Speech to Text credentials to the application](#22-add-watson-speech-to-text-credentials-to-the-application)
 1. [Run the Application](#3-run-the-application)
 1. [Analyze the Application](#4-analyze-the-application)
+1. [Watson Speech to Text Optimization](#5-watson-speech-to-text-optimization)
 
 ## 1. Clone the repo
 
@@ -343,6 +344,42 @@ This is a part of Q & A's asked at the end of the meeting.
 
 * You can also view the transcript.
 ![screenshot6](doc/source/images/screenshot6.png)
+
+## 5. Watson Speech to Text Optimization
+The Watson Speech to Text model can be optimized further to get more precise and accurate results. In this section you will learn about the following speech recognition parameters of the Watson Speech to Text:
+- Speaker labels (Beta)
+- Smart formatting
+- End of phrase silence time
+- Numeric redaction (Beta)
+- Profanity filtering (Beta)
+
+### Speaker Labels (Beta)
+Speaker labels parameter in Watson™ Speech to Text, identifies which person spoke which words in a conversation. It is best optimized for two person conversation scenario, however it can support upto 6 person but the performance may vary. Example: Telephone conversation between two people, Q&A between two people, etc.
+
+To enable Speaker labels, add the `speaker_labels` parameter and set it to `true`.
+
+```python
+def Transcribe(audiofilepath):
+    with open(audiofilepath, 'rb') as audio_file:
+        speech_recognition_results = speech_to_text.recognize(
+                audio=audio_file,
+                content_type='audio/wav',
+                model='en-US_NarrowbandModel',
+                speaker_labels=True
+            ).get_result()
+
+    return speech_recognition_results
+```
+
+>Note: We are using an **US English NarrowBand Model** to transcribe the audio. ***NarrowBand Model*** is optimized for human to human conversations, whereas, ***BroadBand*** Model is optimized for human to bot or vice-versa conversations. Change your model accordingly.
+
+### Smart formatting
+
+### End of phrase silence time
+
+### Numeric redaction (Beta)
+
+### Profanity filtering (Beta)
 
 # Summary
 
