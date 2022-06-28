@@ -354,6 +354,7 @@ The Watson Speech to Text model can be optimized further to get more precise and
 - Profanity filtering (Beta)
 
 ### Speaker Labels (Beta)
+
 Speaker labels parameter in Watson™ Speech to Text, identifies which person spoke which words in a conversation. It is best optimized for two person conversation scenario, however it can support upto 6 person but the performance may vary. 
 
 Example: Telephone conversation between two people, Q&A between two people, etc.
@@ -380,6 +381,7 @@ def Transcribe(audiofilepath):
 >Learn more about Speaker Labels [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-speaker-labels).
 
 ### Smart formatting
+
 Smart formatting parameter in Watson™ Speech to Text, converts the following strings into more conventional representations:
 - Dates
 - Times
@@ -420,6 +422,7 @@ def Transcribe(audiofilepath):
 >Learn more about Smart formatting [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting).
 
 ### End of phrase silence time
+
 End of phrase silence time parameter in Watson™ Speech to Text, specifies the duration of the pause interval at which the transcript has to be split. This parameter improves the sentence formation in the transcript.
 
 Example:
@@ -449,6 +452,7 @@ def Transcribe(audiofilepath):
             ).get_result()
 
     return speech_recognition_results
+```
 
 >Note: End of phrase silence time is already enabled in this code pattern. ✔️
 
@@ -456,7 +460,64 @@ def Transcribe(audiofilepath):
 
 ### Numeric redaction (Beta)
 
+Numeric redaction parameter in Watson™ Speech to Text, masks the numeric data from final transcripts. It is a useful feature when dealing with PII data.
+
+Example:
+
+Numeric redaction OFF ❌|Numeric redaction ON ✔️
+--|--
+my credit card number is four one four seven two nine one three one seven eight two seven nine two six| my credit card number is xxxx-xxxx-xxxx-7926
+
+To enable Numeric redaction, add the `redaction` parameter and and set it to `true`.
+
+```python
+def Transcribe(audiofilepath):
+    with open(audiofilepath, 'rb') as audio_file:
+        speech_recognition_results = speech_to_text.recognize(
+                audio=audio_file,
+                content_type='audio/wav',
+                model='en-US_NarrowbandModel',
+                speaker_labels=True,
+                smart_formatting=True,
+                end_of_phrase_silence_time=1.5,
+                redaction=True
+            ).get_result()
+
+    return speech_recognition_results
+```
+
+>Learn more about Numeric redaction [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting#numeric-redaction).
+
 ### Profanity filtering (Beta)
+
+Profanity filtering parameter in Watson™ Speech to Text, censors profanity from its results. It is enabled by default, you can disable the feature if you want the words in the output exactly as transcribed.
+ 
+Example:
+
+Profanity filtering OFF ❌|Profanity filtering ON ✔️
+--|--
+__Fword__ you| **** you
+
+To disable Profanity filtering, add the `redaction` parameter and and set it to `false`.
+
+```python
+def Transcribe(audiofilepath):
+    with open(audiofilepath, 'rb') as audio_file:
+        speech_recognition_results = speech_to_text.recognize(
+                audio=audio_file,
+                content_type='audio/wav',
+                model='en-US_NarrowbandModel',
+                speaker_labels=True,
+                smart_formatting=True,
+                end_of_phrase_silence_time=1.5,
+                redaction=True,
+                profanity_filter=False
+            ).get_result()
+
+    return speech_recognition_results
+```
+
+>Learn more about Profanity filtering [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting#profanity-filtering).
 
 # Summary
 
