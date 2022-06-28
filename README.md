@@ -339,7 +339,7 @@ This is a part of Q & A's asked at the end of the meeting.
 
 >Speaker Diarization is a process of extracting multiple speakers information from an audio. [Learn more](https://en.wikipedia.org/wiki/Speaker_diarisation)
 
-* You can view the Summary from Gensim, GPT2 & XLNet models which are ML & Transformer based respectively. The insights are generated using KeyBert model. Navigate to this [Summarizer Notebook URL](https://github.com/IBM/video-summarizer-using-watson/blob/main/Notebooks/Summarize.ipynb) and play around with the different settings of model hyperparameters to increase or decrease the size of the output to suit your requirements. 
+* You can view the Summary from Gensim, GPT2 & XLNet models which are ML & Transformer based approaches respectively. The insights are generated using KeyBert model. You can refer to this [Summarizer Notebook](https://github.com/IBM/video-summarizer-using-watson/blob/main/Notebooks/Custom-Models-for-Summarization-and-Insights.ipynb) and play around with the different settings of model hyperparameters to increase or decrease the size of the output to suit your requirements. 
 ![screenshot5-1](doc/source/images/screenshot5-1.png)
 ![screenshot5-2](doc/source/images/screenshot5-2.png)
 
