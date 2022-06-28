@@ -58,3 +58,4 @@ When you have completed this code pattern, you will understand how to:
 3. Run the Application
 4. Generate summary and insights from the data
 5. Watson Speech to Text Optimization
+6. Summarizer Optimization
