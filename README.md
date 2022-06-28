@@ -19,7 +19,7 @@ When you have completed this code pattern, you will understand how to:
 1. User uploads a video or audio file.
 2. If it is a video, then audio is extracted from the video.
 3. The audio is sent to Watson Speech to Text that transcribes the audio to text.
-4. The text is then summarized with different summarizers.
+4. The text is processed to extract summary, keywords & insights with different approaches.
 5. The speaker diarization, summary and transcript are displayed on the UI.
 6. User can then download the insights.
 
@@ -339,7 +339,7 @@ This is a part of Q & A's asked at the end of the meeting.
 
 >Speaker Diarization is a process of extracting multiple speakers information from an audio. [Learn more](https://en.wikipedia.org/wiki/Speaker_diarisation)
 
-* You can view the Summary from Gensim, GPT2 & XLNet models which are ML & Transformer based respectively. The insights are generated using KeyBert model. Navigate to this [URL](https://github.com/IBM/video-summarizer-using-watson/blob/main/Notebooks/Summarize.ipynb) and play around with the different settings of model hyperparameters to increase or decrease the size of the output to suit your requirements. 
+* You can view the Summary from Gensim, GPT2 & XLNet models which are ML & Transformer based respectively. The insights are generated using KeyBert model. Navigate to this [Summarizer Notebook URL](https://github.com/IBM/video-summarizer-using-watson/blob/main/Notebooks/Summarize.ipynb) and play around with the different settings of model hyperparameters to increase or decrease the size of the output to suit your requirements. 
 ![screenshot5-1](doc/source/images/screenshot5-1.png)
 ![screenshot5-2](doc/source/images/screenshot5-2.png)
 
@@ -522,7 +522,7 @@ def Transcribe(audiofilepath):
 
 # Summary
 
-In this code pattern we learnt how to create a system to generate summary and insights from a video or audio file. This solution has wider applicability across domains to gather insights quickly from different data formats. This will be beneficial for end users to understand the Transformer based architecture & Watson Speech to Text capabilities to embed them in different apps to solve complex business problems using unstructured data.
+In this code pattern we learnt how to create an integrated system to convert speech to text, generate summary and insights from a video or audio file. This solution has wider applicability across domains to gather insights quickly from different data formats. This solution will be beneficial for Developers, Data Scientists & Architects to understand the Transformer based architecture & Watson Speech to Text capabilities to embed them in different apps to solve complex business problems associated with unstructured data.
 
 <!-- keep this -->
 ## License
