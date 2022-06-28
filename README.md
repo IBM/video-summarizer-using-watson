@@ -496,7 +496,7 @@ Example:
 
 Profanity filtering OFF ❌|Profanity filtering ON ✔️
 --|--
-__Fword__ you| **** you
+_Fword_ you| **** you
 
 To disable Profanity filtering, add the `redaction` parameter and and set it to `false`.
 
