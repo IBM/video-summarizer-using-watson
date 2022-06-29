@@ -537,7 +537,12 @@ We can adjust the summary size by setting the ratio (0.1 till 1 where the ideal 
 Learn more about Transformers [here.](https://huggingface.co/docs/transformers/index)
 
 `Machine Learning`
-This approaches uses `Gensim` module for generating extractive summary. It uses the text rank algorithm to select the sentences on basis of the ranking of sentences in a specific order. Its a light weight module and can run on any setup (Cloud or local). We can control the summary size by using the ratio parameter (ex:- ratio=0.2) and word_count (ex:- word_count=250) parameter. This method is useful for generating quick summary and keywords and might need skilled inference to consume the output.
+
+This approaches uses `Gensim` module for generating extractive summary. It uses the text rank algorithm to select the sentences on basis of the ranking of sentences in a specific order. Its a light weight module and can run on any setup (Cloud or local). 
+
+`Hyperparameters`
+
+We can control the summary size by using the ratio parameter (ex:- ratio=0.2) and word_count (ex:- word_count=250) parameter. This method is useful for generating quick summary and keywords and might need skilled inference to consume the output.
 
 
 # Summary
