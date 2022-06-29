@@ -38,7 +38,7 @@ When you have completed this code pattern, you will understand how to:
 1. [Run the Application](#3-run-the-application)
 1. [Generate summary and insights from the data](#4-generate-summary-and-insights-from-the-data)
 1. [Watson Speech to Text Optimization](#5-watson-speech-to-text-optimization)
-1. [Summarizer Optimization](#6-summarizer-optimization)
+1. [Summarizer Models Optimization](#6-summarizer-models-optimization)
 
 ## 1. Clone the repo
 
@@ -522,8 +522,23 @@ def Transcribe(audiofilepath):
 
 >Learn more about Profanity filtering [here](https://cloud.ibm.com/docs/speech-to-text?topic=speech-to-text-formatting#profanity-filtering).
 
-## 6. Summarizer Optimization
-We have used transformer based and ML based models to generate summary from the transcript.
+## 6. Summarizer Models Optimization
+
+The approaches used for extractive summarization are based on Transformer & Machine Learning.
+
+`Transformer`
+
+This approach pays equal attention to the words in the data and establish a relation between the words which are far from each other. Transformer approach works on attention mechanism to generate highly accurate and cohesive summary which can capture the context well and generate meaningful insights. 
+
+`Hyperparameters`
+
+We can adjust the summary size by setting the ratio (0.1 till 1 where the ideal setting would be ratio=0.2). We can also control the summary size by using the num_sentences parameter (ex:- num_sentences=10) to manually update the number of sentences to be present in the summarized output. There are a lot of other parameters that can be adjusted for different tasks like classification, sentence generation etc and for summarization the above mentioned parameters should ideally suffice. We can also re-train the models if required by referring to the link below.
+
+Learn more about Transformers [here.](https://huggingface.co/docs/transformers/index)
+
+`Machine Learning`
+This approaches uses `Gensim` module for generating extractive summary. It uses the text rank algorithm to select the sentences on basis of the ranking of sentences in a specific order. Its a light weight module and can run on any setup (Cloud or local). We can control the summary size by using the ratio parameter (ex:- ratio=0.2) and word_count (ex:- word_count=250) parameter. This method is useful for generating quick summary and keywords and might need skilled inference to consume the output.
+
 
 # Summary
 
