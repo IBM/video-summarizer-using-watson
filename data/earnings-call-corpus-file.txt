@@ -1,0 +1,126 @@
+Welcome and thank you for standing by at this time all participants are in a listen only mode. today's conference is being recorded if you have any objections may disconnect at this time now I'll turn the meeting over to miss Patricia Murphy with IBM ma'am you may begin 
+thank you this is Patricia Murphy vice president of investor relations for IBM I want to welcome you to our 1Q 2019 earnings presentation I'm here with Jim Cavanaugh IBM senior vice president and chief financial officer 
+will post today's prepared remarks on the IBM investor website within a couple of hours and a replay will be available by this time tomorrow 
+some comments made in this presentation may be considered forward looking under the private securities litigation Reform Act of nineteen ninety five those statements involve factors that could cause our actual results to differ materially additional information about these factors is included in the company's SEZ filings 
+a presentation also includes non gap measures to provide additional information to investors we provide a reconciliation charts at the end of the presentation and in the 8 K. admitted to the FCC 
+before turning the call over to Jim I want to remind you we recently made changes to our management system and our organisational structure a statement reporting for two thousand and nineteen has been updated to reflect this business structure we provided to years of historical financial information by quarter on the same as a couple of weeks ago and this can be found on our investor website and today we'll be discussing our first quarter results in this new segment structure so with that I'll turn the call over to Jim 
+thanks Patricia and thanks to all of you for joining us in the first quarter we delivered eighteen point two billion dollars of revenue with significant operating leverage we deliver two point 2 billion dollars of operating pre tax income and 2 dollars and 25 cents of operating earnings per share and we've now generated over 12 billion dollars of free cash flow over the last year with realisation well over a 100%
+we had strong performance in offerings that help clients with their digital transformations in journeys the clout at the same time we continue to take actions to optimise our portfolio while investing to lead in the emerging high value areas of the IT industry you saw this play out no results our cloud growth accelerated to twelve percent at constant currency are clouding cognitive software was up two percent in our consulting revenue was up nine percent also both at constant currency we had significant margin expansion with operating gross margin up ninety basis points driven by both services segments and we had solid free cash flow 
+improving margin has been a focus for us in our performance this quarter is the result of actions we've been taking not only our focus on higher value in portfolio optimisation but also driving productivity and operational efficiency especially in our services business 
+with this start to the year we are maintaining our full year expectations for operating earnings per share and free cash flow 
+in the first quarter our revenue was down less than a point year to year at constant currency slightly better than our fourth quarter performance 
+are reported revenue as expected includes a significant currency had one 
+as always I'll focus on constant currency performance 
+from a geographic perspective are your your revenue growth in the developed markets improved a couple points sequentially consistent with the expectations we discussed last quarter that said we had weaker performance in the emerging markets in Asia Pacific which impacted our overall revenue performance 
+looking at our results by segment we had continued revenue growth in global business services and then are cloud and cognitive software In GBS as I said we had another quarter of strong growth consulting as we help clients with their digital reinvention 
+and we again expanded our margins and GBS 
+In our software segment growth was driven by our hybrid cloud offering security and solution areas like supply chain and Watson health 
+in global technology services we're continuing to help our clients implement and manage hybrid multi cloud environment 
+this is evidenced in the increasing share of our backlog which is now cloud at the same time consistent with our high value focus we're continuing to take actions to optimise our GTS performance by exiting lower value content while this contributes to lower GTS revenue we had a higher profit margin a cash contribution 
+our systems revenue decline reflecting the IBM Z product cycle dynamics and weaker performance and storage 
+Across our segments clients continue to be focused on solutions that deliver innovation and growth 
+though as we mentioned last quarter we're seeing an increasing biased towards engagements that provide productivity and predictability of spend 
+And so our results this quarter reflect our ability to deliver both innovation and productivity helping our clients transition their business models to hybrid cloud. cloud revenue growth in the first quarter accelerated to 12% with our as a service offerings up 15 % with this our cloud revenue has grown a 19.5 billion dollars over the last year. 
+over the last several months we've talked about the next chapter of cloud 
+which focuses on shifting mission critical work to the cloud in optimising everything from supply chain the core banking systems 
+to address this opportunity enterprises need to be able to move and manage data services and work flows across multiple cloud and on Prem 
+And they need to be able to address security concerns data protection and protocols availability and cloud management this requires a hybrid multi cloud open approach and so we have been reshaping our business to address this opportunity investing heavily to bill capabilities across our business 
+like IBM cloud, IBM cloud private, and IBM cloud private for data. The IBM multi cloud manager, cloud garages, cloud migration services, and cloud optimised systems. 
+these are the innovations that are driving are 19.5 five billion dollars of cloud revenue 
+in the first quarter we introduce additional capabilities that will accelerate hybrid cloud adoption including Watson anywhere which makes IBM Watson available on premises as well as on any private or public cloud and IBM cloud integration platform which provides a standard way to integrate services and applications across multiple cloud environment more broadly we have built a framework of offerings to facilitate our clients journey to the cloud 
+it is designed to help our clients across the four key stages of their cloud transformation journey advise, move, build and manage. 
+these offerings spring in our cloud in cognitive software global business services and global technology services leveraging the integrated value of IBM 
+and so we have a strong foundation for the addition of redhat 
+together we will be ideally positioned to help our clients shipped their business applications to the hybrid cloud while addressing the issues I just mention around portability management consistency security remaining open which avoids vendor lock in 
+this will not only enhance the growth of redhat's business after closing but with all of IBM as we saw more of our data and AI software on our containers across multiple platforms in more of our services from app modernisation the multi cloud managed services 
+at IBM we're investing in building capabilities to be ready to drive the synergies were moving through the regulatory process it continued expected close in the second half of 2019.
+before getting into the financial metrics I want to lay out the contributors to our year to year operating earnings per share performance especially because there are a couple of larger items in last year's results that impact the dynamics in fact these larger items contributed a 32 cent benefit the last year's earnings per share which of course create a head wind to this year's growth 
+and so looking at the drivers as I said our revenue was down less than 1% at constant currency 
+but what the stronger dollar revenue was down 4.7% 
+at times the margin revenue was ahead when the profit and earnings per share growth 
+last year we took pretax charges associated with the actions to re align our skills the key opportunities 
+and better position our systems cost structure these together with the benefit of the actions and our ongoing operating efficiencies resulted in strong pre tax income growth and pre tax margin expansion 
+last year we also had a large discrete tax benefits associated with an audit settlement 
+with a much smaller discrete benefit this year tax was a significant headwind torn that income and finally a lower share count contributed to grow 
+putting this all together we had solid operating leverage and margin expansion offset by a 32 cent impact of last year's significant items resulting in an operating ETS of 2 dollars and 25 cents 
+so now we're getting into profit and margin metrics we continue to drive operating leverage expanding both gross and pre tax margin 
+our operating gross margin was up 90 basis points 
+this was driven by strong performance in both services businesses to gather up a 160 basis points 
+we also had a year your benefit from the charge we took last year in system which was offset by the impact of the IBM Z. product cycle 
+our operating expense was better 11% which resulted in a 2 point benefit in our expense to revenue ratio 
+overall we've been driving productivity in our business including implementing new ways of working and leveraging automation and infusing AI into our products with ease 
+this drives operating leverage and provide flexibility to increase investment in areas like hybrid cloud AI and blockchain 
+but we have a few other drivers of our expense performance this quarter including currency and lower workforce rebalancing charges mitigated by our lower level of I. P. income 
+regarding currency while a stronger dollar hurts the top line it generally helps expense you both the translation and the benefit of hedging contracts 
+in the first quarter currency helped are your your expense by nearly 6 points 
+much of this was reflected in other income and expense 
+in fact the 200 million dollar year to year change in other income and expense was entirely due to hedging benefits 
+remember these hedging gave mitigate the currency impact throughout the piano 
+expense also includes the your your reduction of over 500 million dollars for workforce rebalancing driven by last year's charge 
+and finally with an expense we absorb the lower level of I. P. income as it hurts our PTI growth by over 200 million dollars 
+putting the expense performance together with our gross margin expansion pre tax margin was up over 300 basis points 
+our operating tax rate was 10% including discrete 
+this is right in line with our all in first quarter expectation of 10-11% we provided in January 
+and as I said earlier this was a significant headwind to our net income growth year to year 
+looking at our cash metrics we generated 1.7 billion dollars of free cash flow in the quarter which is up about 350 million dollars over last year 
+there's a lot of seasonality in our cash generation and so looking over the last 12 months we generated over 12 billion dollars of free cash flow that's a 140% of our gap net income normalize 
+I'll touch on the cast drivers and uses of cash a little later 
+and so now before getting into the segment performance I want to spend a minute on an overview of our 2019 segment structure 
+as Patricia mention we shared historical information on this new structure a couple weeks ago 
+as our clients become digital enterprises they need tighter integration between hybrid cloud and their date and AI. platforms to unlock value 
+and so we recently made changes to our management system 
+the more effectively address our clients involving needs and in preparation for the acquisition of redhat 
+the changes also better align our portfolio to the market and the underlying business models 
+the business changes resulted in 3 adjustment to our segment structure for 2019 
+1. we brought our clouding cognitive software together in one segment 
+2. we combined our security services with security software consistent with the way we are running that integrated business 
+and then finally we moved the results for the businesses were divested to the other category to provide better transparency to the on going operational performance of our software in GBS segment 
+this includes the pending sale of our collaboration and on-prem marketing and commerce software the H. C. L. the pending sale of the balance of our marketing in commerce software the center bridge and the just completed sale of arts the the mortgage servicing business 
+I'm looking at our new segment we created the clouding cognitive software segment bringing software platforms and solutions into one segment 
+within this segment will report cloud in data platforms which brings together software for hybrid cloud management with data and AI platforms cognitive applications include vertical and domain specific solutions that are built on cloud and data platforms these offerings are increasingly being infused with AI. 
+then transaction processing platforms includes the middle where and database software that supports our client's mission critical workloads running under Z OS as well as storage software 
+looking at our services segment the scope of global business services segment overalls is unchanged other than moving the device that mortgage servicing business the other 
+global technology services is consistent with the services component of technology services and cloud platform excluding security services 
+and then finally our system and global financing segments are also unchanged
+now let me get into the segment results starting with our cloud in cognitive software segment where revenue grew 2% 
+our client security the cloud and AI is now turning to more mission critical workloads 
+as I just mentioned linking the data AI and applications together with hybrid cloud in a secure way is critical for any successful digital reinvention 
+we are uniquely positioned to do that with our comprehensive cloud in data offerings coupled with a deep understanding of our client's work flows and security needs 
+within this segment we had good growth in cloud and data platforms and cognitive applications what transaction processing platforms with flat I'll break down some of the drivers behind these areas 
+our cloud and data platforms grew 2% we deliver growth this quarter by helping clients build across public and private clouds with IBM cloud private which is you know is built on Linux containers and Kubernetes 
+we help them modernize and integrate applications and environments with our integration and digital business automation platform and then collect and manage data with the hybrid data management platform all of which grew this quarter 
+this need for tighter integration across hybrid cloud data and AI are also driving traction for IBM cloud private for data offering as well as Watson assistant and Watson openscale that run on IBM cloud private for data we see the value of bringing together the hybrid cloud and data value propositions at a European taxes authority which is using our digital business automation platform to redesign their tax prophecies around their data lake and approve the taxpayer experience 
+in cognitive applications revenue was up 4% 
+Growth was led by security as well as solution areas like health supply chain and weather 
+if security we delivered strong double digit growth with our integrated software and services value proposition 
+in particular we continue to see good traction with our threat management software and services offerings including QRadar and resilient in our security intelligence operations consulting services which detect and respond to security threat for our clients 
+Panasonic for example is leveraging QRadar and related services the strength and its threat management posture Panasonic is also piloting our next Gen X. force threat management offering 
+in Watson health we have broad based growth across areas including air provider in government as clients look to harness data to create actionable insight 
+we also had good results from our weather offerings 
+which grew double digits this quarter and reached a new all time high in the number of active users 
+transaction processing platforms revenue was consistent with last year as clients continue to commit to our platform for the longer term 
+performance reflects the value we provide clients managing these vital workloads and their preference for predictability and I.T. spent 
+turning a profit for the segment we spent a pre tax margin by 2 points year to year this reflects the lower level of workforce rebalancing this year mitigated by head when an I. P. income they continued investment in key strategic areas 
+as we look forward essentially all of our software portfolio now run on Linux containers orchestrated by Kubernetes 
+we've introduce new offerings like IBM cloud integration platform the digital business automation platform and Watson anywhere to further accelerate hybrid cloud adoption and we have ongoing activities to educate all of IBM's employees on the journey to cloud which includes redhat skills all of this better prepares us for the red hat acquisition 
+moving the global business services we continue the momentum from last year and delivered another solid quarter 
+revenue grew 4% gross margin expanded 280 basis points 
+we again had strong growth in consulting which was up 9% 
+as clients and bark on their digital journey to a cognitive enterprise they're turning the GBS to help them with their strategy and implementation leveraging our deep industry expertise in innovative technology portfolio 
+the growth this quarter was led by digital strategy and NIX 
+as well as consulting for cloud application migration in our next generation enterprise application practice 
+within cloud application migration 
+GBS advisory services works with enterprises the plan and implement a clear strategy and roadmap for the hybrid cloud journey 
+we are doing this with Tribune publishing as they transform from a legacy print company to a digital company helping them determine the right environment for each of their applications and optimizing the migration to the cloud 
+our next generation enterprise application offerings assist clients as they build and implement cloud native applications in areas such as workday salesforce and SAP HANA 
+IBM is now leading the market with over 200 SAP HANA impact assessment over 200 implementations and more than a 125 go live 
+in application management we are shifting our business the cloud based offerings 
+And continue to have good momentum in our cloud migration factory and cloud application development 
+overall application manager revenue was flat due to ongoing clients in the traditional application management engagement 
+and then global process services had solid performance in first quarter 
+revenue was up 5% with strong performance and risk and compliance along with financial process services 
+turning the GBS profit our gross margin was 26% which is up 280 basis points driven by our mix the higher value offering 
+the yield on our productivity and utilization and this initiatives 
+and a continuing help from currency given our global delivery mix 
+this enables us to make investments as we prepare for the redhat acquisition such as scaling our existing redhat practice to enhance our journey the cloud offering for clients leveraging redhat capabilities 
+we are also creating new offerings around advise build move and manage services through industry points of view and platform place

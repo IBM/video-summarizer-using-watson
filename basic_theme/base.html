@@ -1,0 +1,251 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="{{ " img/favicon.ico"|url }}">
+
+
+  <!--
+    You can include external assets of course, but be aware that it means the
+    documentation may not work well offline.
+  -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+
+  <link rel="stylesheet" href="{{ " css/theme.css"|url }}">
+
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  {% for path in config.extra_css %}
+  <link href="{{ path|url }}" rel="stylesheet">
+  {% endfor %}
+
+  <!--
+    To include static assets from our theme, just add
+    {{ base_url }} beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="{{ " js/theme.js"|url }}"></script>
+
+  {% block extrahead %}
+  {% endblock %}
+
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  {% for path in config.extra_javascript %}
+  <script src="{{ path|url }}"></script>
+  {% endfor %}
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  {% if config.google_analytics %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+
+</head>
+
+<body>
+  <header class="bx--header" role="banner" aria-label="IBM" data-header>
+    <a class="bx--header__name" href="/" title="">
+      <span class="bx--header__name--prefix">
+        IBM 
+        &nbsp;
+      </span>
+      Developer
+    </a>
+    <div class="bx--header__global">
+      <a class="bx--header__name" href="{{ config.repo_url }}" title="">
+        <span class="bx--header__name--prefix">
+          Go to
+          &nbsp;
+        </span>
+        GitHub Repo
+      </a>
+    </div>
+  </header>
+
+  <div class="bx--navigation" id="navigation-menu-82drm5kl2z3" data-navigation-menu>
+    <div class="bx--navigation-section">
+      <ul class="bx--navigation-items">
+        <li class="bx--navigation-item">
+          <div class="bx--navigation__category-title">
+            {{ config.site_name }}
+          </div>
+          <!-- <div class="bx--product-switcher__search">
+            <div class="bx--form-item">
+              <div data-search class="bx--search bx--search--sm bx--search--shell" role="search">
+                <svg class="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm4.936-1.27l4.563 4.557-.707.708-4.563-4.558a6.5 6.5 0 1 1 .707-.707z"
+                    fill-rule="nonzero" />
+                </svg>
+                <form action="{{ " search.html"|url }}" method="get">
+                  <input class="bx--search-input" type="search" name="q" placeholder="Search docs"
+                    aria-labelledby="search-input-label-2">
+                </form>
+
+
+                <button class="bx--search-close bx--search-close--hidden" title="Clear search input"
+                  aria-label="Clear search input">
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 6.586L5.879 4.464 4.464 5.88 6.586 8l-2.122 2.121 1.415 1.415L8 9.414l2.121 2.122 1.415-1.415L9.414 8l2.122-2.121-1.415-1.415L8 6.586zM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                      fill-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </li>
+      </ul>
+
+    </div>
+    <div class="bx--navigation-section">
+      <ul class="bx--navigation-items">
+        <li class="bx--navigation-item">
+          <div class="bx--navigation__category bx--navigation__category--expanded">
+            <button class="bx--navigation__category-toggle" aria-haspopup="true" aria-expanded="false"
+              aria-controls="category-1-menu">
+              <div class="bx--navigation__category-title">
+                Documentation Navigation
+                <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path d="M16 22L6 12l1.414-1.414L16 19.172l8.586-8.586L26 12 16 22z" />
+                </svg>
+              </div>
+            </button>
+            <ul id="category-1-menu" class="bx--navigation__category-items">
+              {% for nav_item in nav %}
+              {% include "nav.html" %}
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="bx--navigation-section">
+      <ul class="bx--navigation-items">
+        <li class="bx--navigation-item">
+          <div class="bx--navigation__category bx--navigation__category--expanded">
+            <button class="bx--navigation__category-toggle" aria-haspopup="true" aria-expanded="false"
+              aria-controls="category-2-menu">
+              <div class="bx--navigation__category-title">
+                Table of Contents
+                <svg aria-hidden="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path d="M16 22L6 12l1.414-1.414L16 19.172l8.586-8.586L26 12 16 22z" />
+                </svg>
+              </div>
+            </button>
+            <ul id="category-2-menu" class="bx--navigation__category-items">
+
+              {% for toc_item in page.toc %}
+              <li class="bx--navigation__category-item"><a class="bx--navigation-link" href="{{ toc_item.url }}">{{
+                  toc_item.title }}</a></li>
+              {% for toc_item in toc_item.children %}
+              <li class="bx--navigation__category-item"><a class="bx--navigation-link" href="{{ toc_item.url }}">{{
+                  toc_item.title }}</a></li>
+              {% endfor %}
+              {% endfor %}
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    {% if page.next_page or page.previous_page %}
+    <div>
+      {% if page.previous_page %}
+      <a class="bx--btn bx--btn--primary bx--btn--field" href="{{ page.previous_page.url|url }}"
+        title="{{ page.previous_page.title }}">&#8592; Previous Page</a>
+      {% else %}
+      <a class="bx--btn bx--btn--secondary bx--btn--field" href="{{ page.previous_page.url|url }}"
+        title="{{ page.previous_page.title }}" disabled>&#8592; Previous Page</a>
+      {% endif %}
+
+      {% if page.next_page %}
+      <a class="bx--btn bx--btn--primary bx--btn--field" href="{{ page.next_page.url|url }}"
+        title="{{ page.next_page.title }}" />Next Page &#8594;</a>
+      {% else %}
+      <a class="bx--btn bx--btn--secondary bx--btn--field" href="{{ page.next_page.url|url }}"
+        title="{{ page.next_page.title }}" disabled />Next Page &#8594;</a>
+      {% endif %}
+    </div>
+    {% endif %}
+    <!-- <p>MkDocs version: {{ mkdocs_version }}</p>
+    <p>MkDocs Build Date: {{ build_date_utc }}</p> -->
+  </div>
+  <div class="custom-container">
+    <div class="bx--row">
+      <div class="bx--col-lg-12">
+        <div class="outside">
+          <div class="inside">
+
+
+            {% block content %}
+            {{ page.content }}
+            {% endblock %}
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Built with <a href="https://www.mkdocs.org">MkDocs</a>. -->
+
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+</body>
+<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+
+</html>
