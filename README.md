@@ -1,4 +1,4 @@
-# Summarize a video or audio file using IBM Watson
+# Summarize a video or audio file using IBM Watson 
 
 In this code pattern, you will learn to build an end to end framework for generating summaries & insights from video and/or audio files using a combination of IBM and Open source technologies.
 
