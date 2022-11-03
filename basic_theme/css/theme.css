@@ -1,0 +1,24 @@
+body {
+    margin: 1em;
+}
+
+.custom-container {
+    margin-top: 3.5rem;
+    margin-left: 16rem;
+    margin-right: 2rem;
+}
+
+.active a {
+    color: red;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    text-align: right;
+  }

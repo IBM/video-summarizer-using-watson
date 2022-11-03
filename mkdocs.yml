@@ -1,0 +1,47 @@
+site_name: IBM Developer Code Pattern
+docs_dir: .
+theme:
+  name: material
+  custom_dir: 'overrides/'
+  logo: assets/logo.svg
+  features:
+    - toc.integrate
+    - navigation.top
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: blue
+      accent: light blue 
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: blue
+      accent: light blue 
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+repo_url: https://github.com/IBM/video-summarizer-using-watson
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+plugins:
+  - search
+  - same-dir
+
+nav:
+    - Instructions: README.md
