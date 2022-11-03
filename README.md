@@ -1,4 +1,4 @@
-# Summarize a video or audio file using Watson
+# Summarize a video or audio file using IBM Watson
 
 In this code pattern, you will learn to build an end to end framework for generating summaries & insights from video and/or audio files using a combination of IBM and Open source technologies.
 
@@ -25,11 +25,12 @@ When you have completed this code pattern, you will understand how to:
 6. User can then download the insights.
 
 <!--Optionally, update this section when the video is created-->
-# Watch the Video
+## Watch the Video
 
-[![video](http://img.youtube.com/vi/zEHNVXtspM0/0.jpg)](https://www.youtube.com/watch?v=zEHNVXtspM0)
+<!-- [![video](http://img.youtube.com/vi/zEHNVXtspM0/0.jpg)](https://www.youtube.com/watch?v=zEHNVXtspM0) -->
+<iframe src="https://www.youtube.com/embed/zEHNVXtspM0" frameborder="0" allowfullscreen width="560" height="315"></iframe>
 
-# Steps
+## Steps
 
 1. [Clone the repo](#1-clone-the-repo)
 1. [Create Watson Services](#2-create-watson-services)
@@ -545,7 +546,7 @@ This approaches uses `Gensim` module for generating extractive summary. It uses 
 We can control the summary size by using the ratio parameter (ex:- ratio=0.2) and word_count (ex:- word_count=250) parameter. This method is useful for generating quick summary and keywords and might need skilled inference to consume the output.
 
 
-# Summary
+## Summary
 
 In this code pattern you learned how to create an integrated system to convert speech to text, generate summary and insights from a video or audio file. You also learned about improving the readibility of the transcripts by tuning the parameters of Watson Speech to Text and finally you learned about different state of the art language models used for summarizing the text. 
 

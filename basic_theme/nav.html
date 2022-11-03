@@ -1,0 +1,17 @@
+<!--
+
+-->
+{% if not nav_item.children %}
+<li {% if nav_item.active %}class="bx--navigation__category-item bx--navigation__category-item--active"{% endif %}>
+    <a class="bx--navigation-link" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+</li>
+{% else %}
+  <li class="bx--navigation__category-item">
+    {{ nav_item.title }}
+    <ul class="bx--navigation__category-items">
+        {% for nav_item in nav_item.children %}
+            {% include "nav.html" %}
+        {% endfor %}
+    </ul>
+  </li>
+{% endif %}
