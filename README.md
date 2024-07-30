@@ -27,8 +27,7 @@ When you have completed this code pattern, you will understand how to:
 <!--Optionally, update this section when the video is created-->
 ## Watch the Video
 
-<!-- [![video](http://img.youtube.com/vi/zEHNVXtspM0/0.jpg)](https://www.youtube.com/watch?v=zEHNVXtspM0) -->
-<iframe src="https://www.youtube.com/embed/zEHNVXtspM0" frameborder="0" allowfullscreen width="560" height="315"></iframe>
+[![video](http://img.youtube.com/vi/zEHNVXtspM0/0.jpg)](https://www.youtube.com/watch?v=zEHNVXtspM0)
 
 ## Steps
 
